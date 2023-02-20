@@ -1,0 +1,14 @@
+{
+    "en": {
+        "logo": "assets/img/logo-en.png",
+        "title": "Welcome to our website!",
+        "subtitle": "Here you can find all the information about our company.",
+        "footer-text": "Copyright 2023"
+    },
+    "es": {
+        "logo": "assets/img/logo-es.png",
+        "title": "¡Bienvenidos a nuestro sitio web!",
+        "subtitle": "Aquí podrás encontrar toda la información acerca de nuestra empresa.",
+        "footer-text": "Derechos de autor 2023"
+    }
+}
