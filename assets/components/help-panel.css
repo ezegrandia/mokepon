@@ -1,0 +1,40 @@
+/* ********************** */
+/* Help Panel Rules */
+.close-help-btn {
+    background-image: url(../img/close-btn.svg);
+}
+
+.help-btn-escape-container {
+    display: flex;
+    justify-content: end;
+    padding: 15px;
+    padding-right: 25px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+
+.help-panel {
+    background-color: #ffcc00;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 30px;
+    border: 10px solid #356bbc;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+}

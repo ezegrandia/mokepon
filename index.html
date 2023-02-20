@@ -7,11 +7,23 @@
         <title>Mokepón</title>
         <link rel="stylesheet" href="./assets/css/base.css" />
         <link rel="stylesheet" href="./assets/components/header.css" />
+        <link rel="stylesheet" href="./assets/components/help-panel.css">
     </head>
     <body>
-        <header id="header"></header>
+        <header id="header" class="section header-container"></header>
+        <aside id="help-panel" class="help-panel"></aside>
         <main id="main" class="main"></main>
         <footer id="footer"></footer>
         <script src="./assets/js/load-header.js"></script>
+        <script src="./assets/js/load-help-panel.js"></script>
+        <script>
+            // Espera a que se cargue el contenido del header antes de cargar app.js
+            document.addEventListener("DOMContentLoaded", function() {
+                // Carga app.js después de que se haya cargado el contenido del header
+                var script = document.createElement('script');
+                script.src = "./assets/js/app.js";
+                document.body.appendChild(script);
+            });
+        </script>
     </body>
 </html>
