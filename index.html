@@ -8,14 +8,17 @@
         <link rel="stylesheet" href="./assets/css/base.css" />
         <link rel="stylesheet" href="./assets/components/header.css" />
         <link rel="stylesheet" href="./assets/components/help-panel.css">
+        <link rel="stylesheet" href="./assets/components/logo.css">
     </head>
     <body>
         <header id="header" class="section header-container"></header>
         <aside id="help-panel" class="help-panel"></aside>
+        <section id="logo-section" class="section title-container">
+            <!-- <h2 id="subtitle" class="subtitle">Selecciona un personaje para comenzar el viaje!</h2> -->
+        </section>
         <main id="main" class="main"></main>
         <footer id="footer"></footer>
-        <script src="./assets/js/load-header.js"></script>
-        <script src="./assets/js/load-help-panel.js"></script>
+        <script src="./assets/js/load-content.js"></script>
         <script>
             // Espera a que se cargue el contenido del header antes de cargar app.js
             document.addEventListener("DOMContentLoaded", function() {
