@@ -5,25 +5,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Mokepón</title>
+        <link rel="icon" type="image/png" href="/assets/img/favicon.svg" />
         <link rel="stylesheet" href="./assets/css/base.css" />
         <link rel="stylesheet" href="./assets/components/header.css" />
-        <link rel="stylesheet" href="./assets/components/help-panel.css">
-        <link rel="stylesheet" href="./assets/components/logo.css">
+        <link rel="stylesheet" href="./assets/components/help-panel.css" />
+        <link rel="stylesheet" href="./assets/components/logo.css" />
     </head>
     <body>
-        <header id="header" class="section header-container"></header>
+        <header id="header" class="header-container"></header>
         <aside id="help-panel" class="help-panel"></aside>
-        <section id="logo-section" class="section title-container">
-            <!-- <h2 id="subtitle" class="subtitle">Selecciona un personaje para comenzar el viaje!</h2> -->
-        </section>
+        <section id="logo-section" class="title-container"></section>
         <main id="main" class="main"></main>
         <footer id="footer"></footer>
         <script src="./assets/js/load-content.js"></script>
         <script>
             // Espera a que se cargue el contenido del header antes de cargar app.js
-            document.addEventListener("DOMContentLoaded", function() {
+            document.addEventListener("DOMContentLoaded", function () {
                 // Carga app.js después de que se haya cargado el contenido del header
-                var script = document.createElement('script');
+                var script = document.createElement("script");
                 script.src = "./assets/js/app.js";
                 document.body.appendChild(script);
             });
