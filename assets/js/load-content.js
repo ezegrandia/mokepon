@@ -16,15 +16,15 @@ fetch("./assets/components/help-panel.html")
 fetch("./assets/components/logo.html")
     .then((response) => response.text())
     .then((data) => {
-        document.getElementById("logo-section").innerHTML = data;
+        document.getElementById("logo-title-section").innerHTML = data;
     });
 
 // Carga el contenido del footer.html y lo inserta en el elemento <footer></footer> del index.html
-// fetch("footer.html")
-//   .then((response) => response.text())
-//   .then((data) => {
-//     document.getElementById("footer").innerHTML = data;
-//   });
+fetch("./assets/components/footer.html")
+    .then((response) => response.text())
+    .then((data) => {
+        document.getElementById("footer").innerHTML = data;
+    });
 
 // Función para cargar una pantalla y cambiar el contenido del elemento main
 // function loadPage(page) {

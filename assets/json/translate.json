@@ -1,8 +1,10 @@
 {
     "es": {
-        "subtitlePage1": "Selecciona un personaje para comenzar el viaje!"
+        "subtitlePage1": "Selecciona un personaje para comenzar el viaje!",
+        "footer": "Un proyecto desarrollado por:"
     },
     "en": {
-        "subtitlePage1": "Select a character to start the trip!"
+        "subtitlePage1": "Select a character to start the trip!",
+        "footer": "A project developed by:"
     }
 }

@@ -4,6 +4,7 @@ function changeLanguagePage(language) {
         .then((data) => {
             // Modificar el subtítulo
             subtitle.textContent = data[language].subtitlePage1;
+            smallFooter.textContent = data[language].footer;
 
             // Modificar el botón
             // mainBtn.textContent = data[language].button;
