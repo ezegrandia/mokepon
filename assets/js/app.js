@@ -33,17 +33,17 @@ function soundOnOf() {
     }
 }
 
-function changeLang(btn) {
-    if (btn.id == "spanish-btn") {
-        logoImg.setAttribute("src", "/assets/img/logo-es.svg");
-        subtitle.innerHTML = "Selecciona un personaje para comenzar el viaje!";
-        mainBtn.innerHTML = "Continuar";
-    } else {
-        logoImg.setAttribute("src", "/assets/img/logo-en.svg");
-        subtitle.innerHTML = "Select a character to start the trip!";
-        mainBtn.innerHTML = "Continue";
-    }
-}
+// function changeLang(btn) {
+//     if (btn.id == "spanish-btn") {
+//         logoImg.setAttribute("src", "/assets/img/logo-es.svg");
+//         subtitle.innerHTML = "Selecciona un personaje para comenzar el viaje!";
+//         mainBtn.innerHTML = "Continuar";
+//     } else {
+//         logoImg.setAttribute("src", "/assets/img/logo-en.svg");
+//         subtitle.innerHTML = "Select a character to start the trip!";
+//         mainBtn.innerHTML = "Continue";
+//     }
+// }
 
 function openHelpPanel() {
     helpPanel.classList.add("visible");
