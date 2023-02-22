@@ -11,6 +11,25 @@
         <link rel="stylesheet" href="./assets/components/help-panel.css" />
         <link rel="stylesheet" href="./assets/components/logo.css" />
         <link rel="stylesheet" href="./assets/components/footer.css" />
+        <link rel="stylesheet" href="./assets/css/page1.css" />
+        <script src="./assets/js/load-content.js" defer></script>
+        <script src="./assets/js/objects.js" defer></script>
+        <script src="./assets/js/translate.js" defer></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                function loadEffectsAndApp() {
+                    var effectsScript = document.createElement("script");
+                    effectsScript.src = "./assets/js/effects.js";
+                    effectsScript.onload = function () {
+                        var appScript = document.createElement("script");
+                        appScript.src = "./assets/js/app.js";
+                        document.body.appendChild(appScript);
+                    };
+                    document.body.appendChild(effectsScript);
+                }
+                loadEffectsAndApp();
+            });
+        </script>
     </head>
     <body>
         <header id="header" class="header-container"></header>
@@ -18,16 +37,26 @@
         <section id="logo-title-section" class="title-container"></section>
         <main id="main" class="main"></main>
         <footer id="footer" class="footer"></footer>
-        <script src="./assets/js/load-content.js"></script>
-        <script src="/assets/js/translate.js"></script>
+        <!-- <script src="./assets/js/load-content.js"></script>
+        <script src="./assets/js/objects.js"></script>
+        <script src="./assets/js/translate.js"></script>
         <script>
-            // Espera a que se cargue el contenido del header antes de cargar app.js
+            // Espera a que se cargue el contenido del DOM antes de cargar app.js
             document.addEventListener("DOMContentLoaded", function () {
-                // Carga app.js después de que se haya cargado el contenido del header
+                // Carga app.js después de que se haya cargado el contenido del DOM
+                var script = document.createElement("script");
+                script.src = "./assets/js/effects.js";
+                document.body.appendChild(script);
+            });
+        </script>
+        <script>
+            // Espera a que se cargue el contenido del DOM antes de cargar app.js
+            document.addEventListener("DOMContentLoaded", function () {
+                // Carga app.js después de que se haya cargado el contenido del DOM
                 var script = document.createElement("script");
                 script.src = "./assets/js/app.js";
                 document.body.appendChild(script);
             });
-        </script>
+        </script> -->
     </body>
 </html>
